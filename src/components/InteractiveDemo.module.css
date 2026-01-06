@@ -1,0 +1,98 @@
+.section {
+  padding: 8rem 2rem;
+  position: relative;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.appShell {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+.appHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+.appContent {
+  padding: 2rem;
+  height: 400px; /* Reduced for simplicity in this artifact */
+  display: flex;
+  flex-direction: column;
+}
+
+.chartContainer {
+  flex: 1;
+  position: relative;
+  background: rgba(255,255,255,0.02);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  width: 100%;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btnUp {
+  background: var(--neon-green);
+  color: #00331a;
+  box-shadow: 0 0 20px rgba(0, 255, 148, 0.2);
+}
+
+.btnDown {
+  background: var(--neon-pink);
+  color: #33000a;
+  box-shadow: 0 0 20px rgba(255, 0, 85, 0.2);
+}
+
+.payout {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  font-weight: 500;
+  margin-top: 5px;
+}
